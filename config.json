@@ -2,7 +2,7 @@
   "_restaurantId": "The last four digits of the restaurant id (showed on a ticket)",
   "restaurantId": "lastFourDigits",
 
-  "_waitTime": "Some animations needs to wait, 50ms should be safe",
+  "_waitTime": "Some animations needs to wait, 50ms should be safe, for 1 form the code sleep 3 times",
   "waitTime": 50,
 
   "_headless": "true = no browser showed, false = debug mode with browser UI",

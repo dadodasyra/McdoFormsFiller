@@ -6,7 +6,7 @@ const headless = config["headless"];
 const waitTime = config["waitTime"]; //50 ms should be safe
 const restaurantId = config["restaurantId"]; //last 4 digits of the restaurant
 
-//execute startProcess every 11 hours
+//execute startProcess every interval time
 startProcess();
 setInterval(startProcess, config["interval"] * 1000);
 
@@ -32,7 +32,7 @@ async function startProcess () {
     //page 3, restaurant id
     let yesterdayDate = getYesterdayDate();
     await page.evaluate((yesterdayDate) => document.querySelector("#cal_q_mc_q_date_").value = yesterdayDate, yesterdayDate); // day
-    await page.evaluate(() => document.querySelector("#spl_rng_q_mc_q_hour").value = Math.random() * (22 - 6) + 6); // hour, 7 to 22
+    await page.evaluate(() => document.querySelector("#spl_rng_q_mc_q_hour").value = Math.floor(Math.random() * (22 - 6) + 6)); // hour, 7 to 22
     await page.evaluate(() => document.querySelector("#spl_rng_q_mc_q_minute").value = Math.floor(Math.random() * 60)); // minute, 0 to 59
     await page.evaluate((restaurantId) => document.querySelector("#spl_rng_q_mc_q_idrestaurant").value = restaurantId, restaurantId); // restaurant id
     await buttonNext(page);

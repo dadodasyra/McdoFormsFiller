@@ -1,6 +1,6 @@
 # McDo Forms Filler
 
-This is a bot who auto fill with some randoms data the forms available [here](https://survey2.medallia.eu/?hellomcdo).
+This is a bot who auto-fill with some random data the forms available [here](https://survey2.medallia.eu/?hellomcdo).
 
 This code is pretty hardcoded and pretty slow (8 sec to fill a form).
 
@@ -22,11 +22,11 @@ Then you can start it using PM2 (if installed) `pm2 start index.js` otherwise `n
 ### Config
 You can configure the bot with the following parameters:
 - restaurantId: The last four digits of the restaurant id (showed on a ticket)
-- waitTime: Some animations needs to wait, 50ms should be safe
+- waitTime: Some animations need to wait, 50ms should be safe
 - headless: true = no browser showed, false = debug mode with browser UI
 - interval: The interval between each form fill, in seconds, default 39600 sec/11 hours
 
-`opinions.json` can be modified, it's a list of opinions (currently in French) which are randomly inputted in the form.
+`opinions.json` can be modified, it's a list of opinions (currently in French) which are randomly inputted into the form.
 
 ### Which data is injected ?
 - Random age (between 15 and 50+)
