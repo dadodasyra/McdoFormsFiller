@@ -1,10 +1,8 @@
 # McDo Forms Filler
 
-This is a bot who auto-fill with some random data the forms available [here](https://survey2.medallia.eu/?hellomcdo).
+This is a bot who auto-fill with some random data into the forms available [here](https://survey2.medallia.eu/?hellomcdo) from McDonald's.
 
 This code is pretty hardcoded and pretty slow (8 sec to fill a form).
-
-It can be used for example to avoid asking clients to fill the forms but keep the bounty.
 
 ### Installation
 
@@ -40,3 +38,8 @@ You can configure the bot with the following parameters:
 - Yes the command is accurate
 - No problems
 - Max sanitary rules
+
+### Disclaimer
+This is only for **Educational purposes.**
+
+By the way this method could be very easily fixed by McDonald's and the code will not be updated if it's the case.
